@@ -27,8 +27,11 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-
 # Application definition
+
+ROOT_APPS = [
+    'apps.core'
+]
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -37,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    *ROOT_APPS
 ]
 
 MIDDLEWARE = [
